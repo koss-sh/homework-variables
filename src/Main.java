@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        var totalHoursNumber = 640;
+        var hoursPerWorker = 8;
+        var workersNumber = totalHoursNumber / hoursPerWorker;
+        System.out.println("Всего работников в компании —  " + workersNumber + " человек.");
+        workersNumber = workersNumber + 94;
+        totalHoursNumber = workersNumber * hoursPerWorker;
+        System.out.println("Если в компании работает  " + workersNumber + " человек, то всего " + totalHoursNumber + " часов работы может быть поделено между сотрудниками.");
     }
 }
